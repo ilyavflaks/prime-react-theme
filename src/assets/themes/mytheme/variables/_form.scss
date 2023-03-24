@@ -305,7 +305,8 @@ $sliderBorder: 0 none;
 
 /// Height of a horizontal slider
 /// @group form
-$sliderHorizontalHeight: 0.286rem;
+//$sliderHorizontalHeight: 0.286rem;
+$sliderHorizontalHeight: 0.7rem;
 
 /// Width of a vertical slider
 /// @group form
@@ -313,11 +314,13 @@ $sliderVerticalWidth: 0.286rem;
 
 /// Width of a slider handle
 /// @group form
-$sliderHandleWidth: 1.143rem;
+//$sliderHandleWidth: 1.143rem;
+$sliderHandleWidth: 1.5rem;
 
 /// Height of a slider handle
 /// @group form
-$sliderHandleHeight: 1.143rem;
+//$sliderHandleHeight: 1.143rem;
+$sliderHandleHeight: 1.5rem;
 
 /// Background of a slider handle
 /// @group form
@@ -325,7 +328,7 @@ $sliderHandleBg: #ffffff;
 
 /// Border of a slider handle
 /// @group form
-$sliderHandleBorder: 2px solid $primaryColor;
+$sliderHandleBorder: 3px solid $primaryColor;
 
 /// Border radius of a slider handle
 /// @group form
@@ -425,11 +428,13 @@ $calendarCellDateBorder: 1px solid transparent;
 
 /// Background of a calendar date cell in hover state
 /// @group form
-$calendarCellDateHoverBg: #e9ecef;
+//$calendarCellDateHoverBg: #e9ecef;
+$calendarCellDateHoverBg: $primaryColor;
 
 /// Background of a calendar date cell indicating today
 /// @group form
-$calendarCellDateTodayBg: #ced4da;
+//$calendarCellDateTodayBg: #ced4da;
+$calendarCellDateTodayBg: $secondaryColor;
 
 /// Border color of a calendar date cell indicating today
 /// @group form
