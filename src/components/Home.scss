@@ -1,0 +1,174 @@
+.home {
+  .image-text {
+    vertical-align: middle;
+  }
+
+  .customer-badge {
+    border-radius: 2px;
+    padding: 0.25em 0.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+
+    &.status-qualified {
+      background-color: #c8e6c9;
+      color: #256029;
+    }
+
+    &.status-unqualified {
+      background-color: #ffcdd2;
+      color: #c63737;
+    }
+
+    &.status-negotiation {
+      background-color: #feedaf;
+      color: #8a5340;
+    }
+
+    &.status-new {
+      background-color: #b3e5fc;
+      color: #23547b;
+    }
+
+    &.status-renewal {
+      background-color: #eccfff;
+      color: #694382;
+    }
+
+    &.status-proposal {
+      background-color: #ffd8b2;
+      color: #805b36;
+    }
+  }
+
+  // .p-button.p-component:hover {
+  //   background-color: #29bbab;
+  //   box-shadow: none;
+  //   border: solid #e4f9f4 0.15rem;
+  // }
+
+  // // rounded button - square button with rounded corners
+  // .p-button.p-button-icon-only.p-button-rounded {
+  //   border-radius: 0.5rem;
+  // }
+
+  // // Disabled color gray
+  // .button-gray {
+  //   background: #f1f1f1;
+  //   color: #333333;
+  // }
+  // /* Responsive */
+  // .p-button.p-togglebutton.p-component.p-highlight {
+  //   box-shadow: none;
+  // }
+  // .p-button.p-togglebutton.p-component.p-highlight:hover {
+  //   box-shadow: none;
+  //   border: solid #29bbab 0.2rem;
+  // }
+  // .p-datatable-customers .p-datatable-tbody > tr > td .p-column-title {
+  //   display: none;
+  // }
+
+  // .p-dropdown.p-component.p-inputwrapper {
+  //   border-radius: 1.5rem;
+  //   border: solid #29bbab 0.2rem;
+  // }
+  // .p-dropdown.p-component.p-inputwrapper.p-inputwrapper-focus {
+  //   box-shadow: none;
+  // }
+
+  // .p-dropdown-label.p-inputtext.p-placeholder {
+  //   color: #444;
+  //   font-size: 1.5rem;
+  //   font-weight: bold;
+  //   padding: 0.7rem 2rem 0.7rem 2rem;
+  // }
+
+  // .p-dropdown-trigger-icon.p-clickable.pi.pi-chevron-down {
+  //   font-size: 1.3rem;
+  //   color: #444;
+  //   padding: 0 0.9rem 0 0;
+  // }
+
+  // .p-selectbutton.p-buttonset.p-component > .p-button.p-component {
+  //   margin-left: 0.8rem;
+  //   border-radius: 0.5rem;
+  // }
+
+  // .p-button.p-component.p-highlight:hover {
+  //   //activates when you hover over an already selected button
+  //   background-color: transparent;
+  // }
+  // .p-button.p-component.p-highlight.p-focus {
+  //   //activates when you select a button and keep it focused ie before you click elewhere
+  //   background-color: #e4f9f4;
+  //   box-shadow: none;
+  //   border-color: #29bbab;
+  // }
+
+  // .p-button.p-component.p-focus {
+  //   //activates when you focus (click) on a button and then hover away
+  //   box-shadow: none;
+  // }
+
+  // .p-selectbutton .p-button.p-highlight {
+  //   //activates (stays) when you select/highlight a button and then click away
+  //   background-color: #e4f9f4;
+  //   transition-duration: 600ms;
+  //   transition-property: background-color;
+  // }
+
+  // .p-button.p-component {
+  //   border: solid #eeeeee 0.15rem;
+  //   box-shadow: none;
+  // }
+
+  // END  Custom styles
+  @media screen and (max-width: 960px) {
+    .p-datatable {
+      &.p-datatable-customers {
+        .p-datatable-thead > tr > th,
+        .p-datatable-tfoot > tr > td {
+          display: none !important;
+        }
+
+        .p-datatable-tbody > tr {
+          border-bottom: 1px solid var(--layer-2);
+
+          > td {
+            text-align: left;
+            display: block;
+            border: 0 none !important;
+            width: 100% !important;
+            float: left;
+            clear: left;
+            border: 0 none;
+
+            .p-column-title {
+              padding: 0.4rem;
+              min-width: 30%;
+              display: inline-block;
+              margin: -0.4rem 1rem -0.4rem -0.4rem;
+              font-weight: bold;
+            }
+
+            .p-progressbar {
+              margin-top: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .p-paginator {
+    .p-paginator-current {
+      margin-left: auto;
+    }
+  }
+
+  .p-progressbar {
+    height: 4px;
+  }
+}
