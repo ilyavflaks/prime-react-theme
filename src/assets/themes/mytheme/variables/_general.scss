@@ -12,7 +12,8 @@ $fontWeight: normal;
 
 /// Primary text color
 /// @group general
-$textColor: #495057;
+//$textColor: #495057;
+$textColor: #212b36;
 
 /// Secondary text color
 /// @group general
@@ -34,7 +35,8 @@ $borderRadius: 0.5rem;
 
 /// Duration of the property transitions
 /// @group general
-$transitionDuration: 0.2s;
+//$transitionDuration: 0.2s;
+$transitionDuration: 0.5s;
 
 /// Properties of a form element transition
 /// @group general
@@ -78,11 +80,13 @@ $loadingIconFontSize: 2rem;
 
 /// Color to use on an invalid element e.g. invalid input
 /// @group general
-$errorColor: #e4677e;
+//$errorColor: #e4677e;
+$errorColor: #b60000;
 
 /// Outline color of a focused element
 /// @group general
-$focusOutlineColor: #bfd1f6;
+//$focusOutlineColor: #bfd1f6;
+$focusOutlineColor: none;
 
 /// Outline of a focused element
 /// @group general
@@ -94,7 +98,8 @@ $focusOutlineOffset: 0;
 
 /// Box shadow of a focused element
 /// @group general
-$focusShadow: 0 0 0 0.2rem $focusOutlineColor;
+//$focusShadow: 0 0 0 0.2rem $focusOutlineColor;
+$focusShadow: none;
 
 /// Width of an action icon
 /// @group general

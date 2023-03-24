@@ -504,20 +504,12 @@ export class Home extends Component {
             </div>
 
             <br />
-            {/* <div className="grid formgrid">
-              <div className="col-12 mb-2 lg:col-6 lg:mb-0">
-                <span className="p-input-icon-left">
-                  <i className="pi pi-lock" />
-                  <InputText type="text" placeholder="Password" />
-                  <i className="pi pi-eye" />
-                </span>
-              </div>
-            </div> */}
+
             <div className="grid formgrid">
               <div className="col-12 mb-2 lg:col-6 lg:mb-0">
                 <span className="p-input-icon-left p-input-icon-right">
                   <i className="pi pi-lock" />
-                  <InputText type="text" placeholder="Password" />
+                  <InputText type="password" placeholder="Password" />
                   <i className="pi pi-eye" />
                 </span>
               </div>
@@ -758,6 +750,7 @@ export class Home extends Component {
             <h5>Buttons</h5>
             <Button label="Submit" className="mr-2" />
             <Button icon="pi pi-check" className="mr-2" />
+            <Button icon="pi pi-heart" className="mr-2" />
             <Button label="Submit" icon="pi pi-check" className="mr-2" />
             <Button
               label="Submit"
