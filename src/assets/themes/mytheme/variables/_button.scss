@@ -89,7 +89,8 @@ $plainButtonActiveBgColor: #dee2e6;
 
 /// Background of a secondary button
 /// @group button
-$secondaryButtonBg: $secondaryColor;
+//$secondaryButtonBg: $secondaryColor;
+$secondaryButtonBg: $primaryTextColor;
 
 /// Text color of a secondary button
 /// @group button
@@ -98,29 +99,24 @@ $secondaryButtonTextColor: $secondaryTextColor;
 /// Border of a secondary button
 /// @group button
 //$secondaryButtonBorder: 1px solid $secondaryColor;
-$secondaryButtonBorder: 1px solid #ffffff;
+$secondaryButtonBorder: 1px solid $primaryColor;
 
 /// Background of a secondary button in hover state
 /// @group button
 //$secondaryButtonHoverBg: #546e7a;
 $secondaryButtonHoverBg: $primaryColor;
-//TODO!
 
 /// Text color of a secondary button in hover state
 /// @group button
-$secondaryButtonTextHoverColor: #ffffff;
-//TODO!
+$secondaryButtonTextHoverColor: $secondaryTextColor;
 
 /// Border color of a secondary button in hover state
 /// @group button
-//$secondaryButtonHoverBorderColor: $secondaryColor;
-$secondaryButtonHoverBorderColor: $primaryColor;
-//TODO!
+$secondaryButtonHoverBorderColor: $secondaryColor;
 
 /// Background of a secondary button in pressed state
 /// @group button
-$secondaryButtonActiveBg: #455a64;
-//TODO!
+$secondaryButtonActiveBg: $primaryDarkerColor;
 
 /// Text color of a secondary button in pressed state
 /// @group button
@@ -128,13 +124,14 @@ $secondaryButtonTextActiveColor: #ffffff;
 
 /// Border color of a secondary button in pressed state
 /// @group button
-$secondaryButtonActiveBorderColor: #455a64;
-//TODO!
+$secondaryButtonActiveBorderColor: $primaryDarkerColor;
+///
 
 /// Box shadow of a secondary button in focused state
 /// @group button
 //$secondaryButtonFocusShadow: 0 0 0 0.2rem #b0bec5;
-$secondaryButtonFocusShadow: 0 0 0 0.2rem $primaryColor;
+//$secondaryButtonFocusShadow: 0 0 0 0.2rem $primaryColor;
+$secondaryButtonFocusShadow: 0 0 0 0.2rem $secondaryColor;
 
 /// Background of an info button
 /// @group button
@@ -341,6 +338,7 @@ $dangerButtonFocusShadow: 0 0 0 0.2rem lighten($dangerButtonBg, 35%);
 /// Text color of a link button
 /// @group button
 $linkButtonColor: $primaryDarkerColor;
+//not on the template
 
 /// Text color of a link button in hover state
 /// @group button
@@ -354,6 +352,7 @@ $linkButtonTextHoverDecoration: underline;
 /// @group button
 $linkButtonFocusShadow: 0 0 0 0.2rem $focusOutlineColor;
 
+//Toggle, Single Select and Multiple select buttons
 /// Background of a toggle button
 /// @group button
 $toggleButtonBg: #ffffff;

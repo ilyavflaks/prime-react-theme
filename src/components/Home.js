@@ -801,23 +801,53 @@ export class Home extends Component {
             />
 
             {/* <h5>Rounded Buttons</h5>
-                        <Button label="Primary" className="p-button-rounded mr-2" />
-                        <Button label="Secondary" className="p-button-rounded p-button-secondary mr-2" />
-                        <Button label="Success" className="p-button-rounded p-button-success mr-2" />
-                        <Button label="Info" className="p-button-rounded p-button-info mr-2" />
-                        <Button label="Warning" className="p-button-rounded p-button-warning mr-2" />
-                        <Button label="Help" className="p-button-rounded p-button-help mr-2" />
-                        <Button label="Danger" className="p-button-rounded p-button-danger" /> */}
+            <Button label="Primary" className="p-button-rounded mr-2" />
+            <Button
+              label="Secondary"
+              className="p-button-rounded p-button-secondary mr-2"
+            />
+            <Button
+              label="Success"
+              className="p-button-rounded p-button-success mr-2"
+            />
+            <Button
+              label="Info"
+              className="p-button-rounded p-button-info mr-2"
+            />
+            <Button
+              label="Warning"
+              className="p-button-rounded p-button-warning mr-2"
+            />
+            <Button
+              label="Help"
+              className="p-button-rounded p-button-help mr-2"
+            />
+            <Button
+              label="Danger"
+              className="p-button-rounded p-button-danger"
+            />
 
-            {/* <h5>Text Buttons</h5>
-                        <Button label="Primary" className="p-button-text mr-2" />
-                        <Button label="Secondary" className="p-button-secondary p-button-text mr-2" />
-                        <Button label="Success" className="p-button-success p-button-text mr-2" />
-                        <Button label="Info" className="p-button-info p-button-text mr-2" />
-                        <Button label="Warning" className="p-button-warning p-button-text mr-2" />
-                        <Button label="Help" className="p-button-help p-button-text mr-2" />
-                        <Button label="Danger" className="p-button-danger p-button-text mr-2" />
-                        <Button label="Plain" className="p-button-plain p-button-text" /> */}
+            <h5>Text Buttons</h5>
+            <Button label="Primary" className="p-button-text mr-2" />
+            <Button
+              label="Secondary"
+              className="p-button-secondary p-button-text mr-2"
+            />
+            <Button
+              label="Success"
+              className="p-button-success p-button-text mr-2"
+            />
+            <Button label="Info" className="p-button-info p-button-text mr-2" />
+            <Button
+              label="Warning"
+              className="p-button-warning p-button-text mr-2"
+            />
+            <Button label="Help" className="p-button-help p-button-text mr-2" />
+            <Button
+              label="Danger"
+              className="p-button-danger p-button-text mr-2"
+            />
+            <Button label="Plain" className="p-button-plain p-button-text" /> */}
 
             <h5>Raised Text Buttons</h5>
             <Button
@@ -911,14 +941,35 @@ export class Home extends Component {
               className="p-button-rounded p-button-danger"
             />
 
-            {/* <h5>Rounded Text Icon Buttons</h5>
-                        <Button icon="pi pi-check" className="p-button-rounded p-button-text mr-2" />
-                        <Button icon="pi pi-bookmark" className="p-button-rounded p-button-secondary p-button-text mr-2" />
-                        <Button icon="pi pi-search" className="p-button-rounded p-button-success p-button-text mr-2" />
-                        <Button icon="pi pi-user" className="p-button-rounded p-button-info p-button-text mr-2" />
-                        <Button icon="pi pi-bell" className="p-button-rounded p-button-warning p-button-text mr-2" />
-                        <Button icon="pi pi-heart" className="p-button-rounded p-button-help p-button-text mr-2" />
-                        <Button icon="pi pi-times" className="p-button-rounded p-button-danger p-button-text mr-2" /> */}
+            <h5>Rounded Text Icon Buttons</h5>
+            <Button
+              icon="pi pi-check"
+              className="p-button-rounded p-button-text mr-2"
+            />
+            <Button
+              icon="pi pi-bookmark"
+              className="p-button-rounded p-button-secondary p-button-text mr-2"
+            />
+            <Button
+              icon="pi pi-search"
+              className="p-button-rounded p-button-success p-button-text mr-2"
+            />
+            <Button
+              icon="pi pi-user"
+              className="p-button-rounded p-button-info p-button-text mr-2"
+            />
+            <Button
+              icon="pi pi-bell"
+              className="p-button-rounded p-button-warning p-button-text mr-2"
+            />
+            <Button
+              icon="pi pi-heart"
+              className="p-button-rounded p-button-help p-button-text mr-2"
+            />
+            <Button
+              icon="pi pi-times"
+              className="p-button-rounded p-button-danger p-button-text mr-2"
+            />
 
             <h5>Rounded and Outlined Icon Buttons</h5>
             <Button
@@ -967,26 +1018,96 @@ export class Home extends Component {
               <Button label="Delete" icon="pi pi-trash" />
               <Button label="Cancel" icon="pi pi-times" />
             </span>
+            <h5>Anchor Tag</h5>
+            <div>
+              <a href="#">Regular Link </a> &nbsp; &#9829; &nbsp;
+              <a href="#">Also known as</a> &nbsp; &#9829; &nbsp;
+              <a href="#">Anchor Tag</a>
+            </div>
           </div>
         </div>
 
         {/* <div className="col-12">
-                    <div className="card">
-                        <DataTable value={this.state.customers} paginator className="p-datatable-customers" rows={10}
-                            dataKey="id" rowHover selection={this.state.selectedCustomers} onSelectionChange={e => this.setState({ selectedCustomers: e.value })} globalFilter={this.state.globalFilter}
-                            paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" rowsPerPageOptions={[10,25,50]}
-                            currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" header={this.customerTableHeader()} emptyMessage="No customers found.">
-                            <Column selectionMode="multiple" headerStyle={{width: '3em'}}></Column>
-                            <Column field="name" header="Name" body={this.nameBodyTemplate} sortable filter></Column>
-                            <Column header="Country" body={this.countryBodyTemplate} sortable sortField="country.name" filter filterField="country.name" filterMatchMode="contains"></Column>
-                            <Column header="Representative" body={this.representativeBodyTemplate} sortable sortField="representative.name" filter filterField="representative.name" filterMatchMode="in"></Column>
-                            <Column field="date" header="Date" body={this.dateBodyTemplate} sortable filter filterMatchMode="equals"></Column>
-                            <Column field="status" header="Status" body={this.statusBodyTemplate} sortable filter filterMatchMode="equals"></Column>
-                            <Column field="activity" header="Activity" body={this.activityBodyTemplate} sortable filter filterMatchMode="gte"></Column>
-                            <Column body={this.actionBodyTemplate} headerStyle={{width: '8rem', textAlign: 'center'}} bodyStyle={{textAlign: 'center', overflow: 'visible'}}></Column>
-                        </DataTable>
-                    </div>
-                </div> */}
+          <div className="card">
+            <DataTable
+              value={this.state.customers}
+              paginator
+              className="p-datatable-customers"
+              rows={10}
+              dataKey="id"
+              rowHover
+              selection={this.state.selectedCustomers}
+              onSelectionChange={(e) =>
+                this.setState({ selectedCustomers: e.value })
+              }
+              globalFilter={this.state.globalFilter}
+              paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown"
+              rowsPerPageOptions={[10, 25, 50]}
+              currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+              header={this.customerTableHeader()}
+              emptyMessage="No customers found."
+            >
+              <Column
+                selectionMode="multiple"
+                headerStyle={{ width: "3em" }}
+              ></Column>
+              <Column
+                field="name"
+                header="Name"
+                body={this.nameBodyTemplate}
+                sortable
+                filter
+              ></Column>
+              <Column
+                header="Country"
+                body={this.countryBodyTemplate}
+                sortable
+                sortField="country.name"
+                filter
+                filterField="country.name"
+                filterMatchMode="contains"
+              ></Column>
+              <Column
+                header="Representative"
+                body={this.representativeBodyTemplate}
+                sortable
+                sortField="representative.name"
+                filter
+                filterField="representative.name"
+                filterMatchMode="in"
+              ></Column>
+              <Column
+                field="date"
+                header="Date"
+                body={this.dateBodyTemplate}
+                sortable
+                filter
+                filterMatchMode="equals"
+              ></Column>
+              <Column
+                field="status"
+                header="Status"
+                body={this.statusBodyTemplate}
+                sortable
+                filter
+                filterMatchMode="equals"
+              ></Column>
+              <Column
+                field="activity"
+                header="Activity"
+                body={this.activityBodyTemplate}
+                sortable
+                filter
+                filterMatchMode="gte"
+              ></Column>
+              <Column
+                body={this.actionBodyTemplate}
+                headerStyle={{ width: "8rem", textAlign: "center" }}
+                bodyStyle={{ textAlign: "center", overflow: "visible" }}
+              ></Column>
+            </DataTable>
+          </div>
+        </div> */}
         <div className="col-12 md:col-6">
           <div className="card">
             <h5>AccordionPanel</h5>
