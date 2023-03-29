@@ -23,8 +23,7 @@ $inputIconColor: $secondaryTextColor;
 
 /// Border of an input field
 /// @group form
-$inputBorder: 2px solid #ced4da;
-//changed to 2px
+$inputBorder: 1px solid #ced4da;
 
 /// Border of an input field in hover state
 /// @group form
@@ -352,7 +351,8 @@ $calendarTableMargin: 0.5rem 0;
 
 /// Margin of a calendar
 /// @group form
-$calendarPadding: 0.5rem;
+//$calendarPadding: 0.5rem;
+$calendarPadding: 1.5rem;
 
 /// Background of a calendar
 /// @group form
@@ -380,7 +380,8 @@ $calendarHeaderPadding: 0.5rem;
 
 /// Text color of current month and year text in hover state
 /// @group form
-$calendarMonthYearHeaderHoverTextColor: $primaryColor !default;
+//$calendarMonthYearHeaderHoverTextColor: $primaryColor !default;
+$calendarMonthYearHeaderHoverTextColor: #595959 !default;
 
 /// Background of a calendar header
 /// @group form
@@ -392,31 +393,38 @@ $calendarInlineHeaderBg: $calendarBg;
 
 /// Border of a calendar header
 /// @group form
-$calendarHeaderBorder: 1px solid #dee2e6;
+//$calendarHeaderBorder: 1px solid #dee2e6;
+$calendarHeaderBorder: none;
 
 /// Text color of a calendar header
 /// @group form
-$calendarHeaderTextColor: $textColor;
+//$calendarHeaderTextColor: $textColor;
+$calendarHeaderTextColor: #595959;
 
 /// Font weight of a calendar header
 /// @group form
-$calendarHeaderFontWeight: 600;
+//$calendarHeaderFontWeight: 600;
+$calendarHeaderFontWeight: 400;
 
 /// Padding of a calendar weekday cell
 /// @group form
-$calendarHeaderCellPadding: 0.5rem;
+//$calendarHeaderCellPadding: 0.5rem;
+$calendarHeaderCellPadding: 0.2rem;
 
 /// Padding of a calendar date cell
 /// @group form
-$calendarCellDatePadding: 0.5rem;
+//$calendarCellDatePadding: 0.5rem;
+$calendarCellDatePadding: 0.2rem;
 
 /// Width of a calendar date cell
 /// @group form
-$calendarCellDateWidth: 2.5rem;
+//$calendarCellDateWidth: 2.5rem;
+$calendarCellDateWidth: 2.1rem;
 
 /// Height of a calendar date cell
 /// @group form
-$calendarCellDateHeight: 2.5rem;
+//$calendarCellDateHeight: 2.5rem;
+$calendarCellDateHeight: 2.1rem;
 
 /// Border radius of a calendar date cell
 /// @group form
@@ -429,12 +437,13 @@ $calendarCellDateBorder: 1px solid transparent;
 /// Background of a calendar date cell in hover state
 /// @group form
 //$calendarCellDateHoverBg: #e9ecef;
-$calendarCellDateHoverBg: $primaryColor;
+$calendarCellDateHoverBg: $secondaryColor;
 
 /// Background of a calendar date cell indicating today
 /// @group form
 //$calendarCellDateTodayBg: #ced4da;
-$calendarCellDateTodayBg: $secondaryColor;
+//$calendarCellDateTodayBg: $primaryColor;
+$calendarCellDateTodayBg: $primaryTextColor;
 
 /// Border color of a calendar date cell indicating today
 /// @group form
@@ -442,11 +451,13 @@ $calendarCellDateTodayBorderColor: transparent;
 
 /// Text color of a calendar date cell indicating today
 /// @group form
-$calendarCellDateTodayTextColor: $textColor;
+//$calendarCellDateTodayTextColor: $textColor;
+$calendarCellDateTodayTextColor: $secondaryTextColor;
 
 /// Padding of the calendar button bar
 /// @group form
-$calendarButtonBarPadding: 1rem 0;
+//$calendarButtonBarPadding: 1rem 0;
+$calendarButtonBarPadding: 0;
 
 /// Padding of a time picker container of a calendar
 /// @group form
